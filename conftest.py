@@ -7,25 +7,21 @@ from selenium.webdriver.remote.remote_connection import RemoteConnection
 
 browsers = [
     {
-        "platform": "Windows 10",
-        "browserName": "MicrosoftEdge",
-        "version": "14.14393"
+        "platform": "OS X 10.10",
+        "browserName": "chrome",
+        "version": "66"
     }, {
-        "platform": "Windows 10",
-        "browserName": "firefox",
-        "version": "49.0"
-    }, {
-        "platform": "Windows 7",
-        "browserName": "internet explorer",
-        "version": "11.0"
-    }, {
-        "platform": "OS X 10.11",
-        "browserName": "safari",
-        "version": "10.0"
+        "platform": "OS X 10.12",
+        "browserName": "chrome",
+        "version": "62"
     }, {
         "platform": "OS X 10.11",
         "browserName": "chrome",
-        "version": "54.0"
+        "version": "64"
+    }, {
+        "platform": "OS X 10.14",
+        "browserName": "chrome",
+        "version": "64"
     }]
 
 def pytest_generate_tests(metafunc):
@@ -57,6 +53,8 @@ def driver(request, browser_config):
     # we can move this to the config load or not, also messing with this on a test to test basis is possible :)
     desired_caps['tunnelIdentifier'] = tunnel_id
     desired_caps['name'] = test_name
+    desired_caps['extendedDebugging'] = True
+    desired_caps['crmuxdriverVersion'] = '0.3.0'
 
     executor = RemoteConnection(selenium_endpoint, resolve_ip=False)
     browser = webdriver.Remote(
