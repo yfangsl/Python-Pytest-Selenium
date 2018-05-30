@@ -19,7 +19,7 @@ browsers = [
         "browserName": "chrome",
         "version": "64"
     }, {
-        "platform": "OS X 10.14",
+        "platform": "OS X 10.13",
         "browserName": "chrome",
         "version": "64"
     }]
