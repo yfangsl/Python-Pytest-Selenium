@@ -10,14 +10,26 @@ browsers = [
         "platform": "OS X 10.10",
         "browserName": "chrome",
         "version": "66"
-    }, {
-        "platform": "OS X 10.12",
+    },{
+        "platform": "OS X 10.11",
         "browserName": "chrome",
         "version": "62"
     }, {
         "platform": "OS X 10.11",
         "browserName": "chrome",
         "version": "64"
+    }, {
+        "platform": "OS X 10.12",
+        "browserName": "chrome",
+        "version": "62"
+    }, {
+        "platform": "OS X 10.12",
+        "browserName": "chrome",
+        "version": "64"
+    }, {
+        "platform": "OS X 10.13",
+        "browserName": "chrome",
+        "version": "62"
     }, {
         "platform": "OS X 10.13",
         "browserName": "chrome",
