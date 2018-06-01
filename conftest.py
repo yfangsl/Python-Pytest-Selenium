@@ -66,7 +66,7 @@ def driver(request, browser_config):
     desired_caps['tunnelIdentifier'] = tunnel_id
     desired_caps['name'] = test_name
     desired_caps['extendedDebugging'] = True
-    desired_caps['crmuxdriverVersion'] = '0.3.0'
+    desired_caps['crmuxdriverVersion'] = '0.2.1'
 
     executor = RemoteConnection(selenium_endpoint, resolve_ip=False)
     browser = webdriver.Remote(
