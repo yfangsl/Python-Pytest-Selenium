@@ -7,25 +7,17 @@ from selenium.webdriver.remote.remote_connection import RemoteConnection
 
 browsers = [
     {
-        "platform": "OS X 10.10",
+        "platform": "OS X 10.12",
+        "browserName": "chrome",
+        "version": "62"
+    }, {
+        "platform": "OS X 10.12",
         "browserName": "chrome",
         "version": "66"
-    },{
-        "platform": "OS X 10.11",
-        "browserName": "chrome",
-        "version": "62"
-    }, {
-        "platform": "OS X 10.11",
-        "browserName": "chrome",
-        "version": "64"
     }, {
         "platform": "OS X 10.12",
         "browserName": "chrome",
-        "version": "62"
-    }, {
-        "platform": "OS X 10.12",
-        "browserName": "chrome",
-        "version": "64"
+        "version": "67"
     }, {
         "platform": "OS X 10.13",
         "browserName": "chrome",
@@ -33,7 +25,11 @@ browsers = [
     }, {
         "platform": "OS X 10.13",
         "browserName": "chrome",
-        "version": "64"
+        "version": "66"
+    }, {
+        "platform": "OS X 10.13",
+        "browserName": "chrome",
+        "version": "67"
     }]
 
 def pytest_generate_tests(metafunc):
