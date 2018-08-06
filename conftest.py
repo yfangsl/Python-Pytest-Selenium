@@ -56,7 +56,7 @@ def driver(request, browser_config):
     desired_caps['build'] = build_tag
     # we can move this to the config load or not, also messing with this on a test to test basis is possible :)
     desired_caps['tunnelIdentifier'] = tunnel_id
-    desired_caps['name'] = test_name
+    desired_caps['name'] = 'identical_test_name'
 
     executor = RemoteConnection(selenium_endpoint, resolve_ip=False)
     browser = webdriver.Remote(
